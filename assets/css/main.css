@@ -408,7 +408,7 @@ input, select, textarea {
 
 		.row {
 			margin-top: -50px;
-			margin-left: -50px;
+			margin-left: 0px;
 		}
 
 			.row > * {
@@ -1834,7 +1834,7 @@ input, select, textarea {
 	}
 
 		.feature-list section {
-			border-top: solid 1px #eee;
+			/* border-top: solid 1px #eee; */
 			padding-top: 3em;
 			padding-left: 5em;
 			position: relative;
@@ -2137,11 +2137,13 @@ input, select, textarea {
 
 				#nav > ul > li > a, #nav > ul > li > span {
 					display: block;
-					color: #eee;
-					color: rgba(255, 255, 255, 0.75);
+					color: #ffffff;
+					/* color: rgba(255, 255, 255, 0.75); */
 					text-transform: uppercase;
 					text-decoration: none;
-					font-size: 0.7em;
+					font-size: 1em;
+					font-weight: 800;
+					text-shadow: 2px 2px 2px black;
 					letter-spacing: 0.25em;
 					height: 5em;
 					line-height: 5em;
