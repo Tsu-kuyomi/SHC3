@@ -10,6 +10,56 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+  /* --- DESKTOP STYLES (Default) --- */
+  .cybersafe-wrapper {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    gap: 20px; 
+    position: absolute; 
+    top: 130%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+
+  .csf-logo {
+    width: 150px; /* Desktop width */
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .csf-button {
+    font-weight: 900; 
+    font-style: italic;
+    background-color: #1d55e5;
+    padding: 10px 15px; /* Desktop padding */
+    font-size: 16px;    /* Desktop font size */
+    text-decoration: none;
+    color: #f7f7f7;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  /* --- MOBILE STYLES (Smaller Screens) --- */
+  @media (max-width: 600px) {
+    .cybersafe-wrapper {
+      flex-direction: column; 
+      gap: 12px; /* Tighter gap for mobile */
+    }
+
+    .csf-logo {
+      width: 110px; /* Shrinks the logo */
+    }
+
+    .csf-button {
+      padding: 8px 12px; /* Shrinks the button padding */
+      font-size: 14px;   /* Shrinks the text inside the button */
+    }
+  }
+</style>
+
 	</head>
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
@@ -23,33 +73,13 @@
 							<p style="color: #0c0c0c;">Seen - Guided - Protected</p>
 							<br>
 
-							<div 
-							style="
-								display: flex; 
-								align-items: center; 
-								gap: 20px; 
-								position: absolute; 
-								top: 110%; 
-								left: 50%; 
-								transform: translate(-50%, -50%);">
+							<div class="cybersafe-wrapper">
+  <img src="/images/csf2.png" alt="csf logo" class="csf-logo">
 
-									<img src="/images/csf2.png" alt="csf logo" 
-							style="
-								width: 150px;
-								height: auto;
-								border-radius: 10px;">
-
-							<a href="https://cybersafefoundation.org/"
-							style="
-								font-weight: 900; 
-								font-style: italic;
-								background-color: #1d55e5;
-								padding: 10px 15px;
-								text-decoration: none;
-								color: #f7f7f7;
-								border-radius: 10px;">
-								A CyberSafe Foundation Project</a>
-							</div>
+  <a href="https://cybersafefoundation.org/" class="csf-button">
+      A CyberSafe Foundation Project
+  </a>
+</div>
 						
 						</div>
 
